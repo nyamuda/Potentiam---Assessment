@@ -52,9 +52,9 @@ export default {
       nums.forEach((num) => num.classList.remove("active"));
     },
   },
-  /* The function n(), does not take any parameters, is doing complex calculations 
+  /* The function n(), does not receive any parameters, is doing complex calculations 
   and always reacts to the data changes since the limit property value is always 
-  changing. Hence, it's a better idea to use the function () as a computed property rather than a method.*/
+  changing. Hence, it's a better idea to use the function n() as a computed property rather than a method.*/
   computed: {
     n() {
       let numbers = [];
@@ -73,14 +73,18 @@ export default {
   padding: 5px;
   background-color: lightgrey;
   margin: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .number:hover {
   background-color: #0d0b0b;
   color: #ffffff;
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .active {
-  background-color: #ff5533;
+  background-color: #690303;
+  color: #ffffff;
 }
 </style>
