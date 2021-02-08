@@ -18,11 +18,7 @@ export default {
   /*Since the child component is nested into the parent component,
   using a prop as way to pass data (limit) from the parent component 
   to the child component is the best idea.*/
-  props: {
-    limit: {
-      type: Number,
-    },
-  },
+  props: ["limit"],
   data() {
     return {
       numbers: [],
