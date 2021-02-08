@@ -17,7 +17,7 @@
 export default {
   /*Since the child component is nested into the parent component,
   using a prop as way to pass data (limit) from the parent component 
-  to the child component.*/
+  to the child component is the best idea.*/
   props: {
     limit: {
       type: Number,
@@ -28,14 +28,6 @@ export default {
       numbers: [],
     };
   },
-  /*
-  watch: {
-    ['$parent.limit'](newLimit)
-    {
-      this.limit = newLimit;
-    }
-  },
-  */
   methods: {
     hov(number) {
       const nums = document.querySelectorAll(".number");
